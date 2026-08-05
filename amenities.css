@@ -1,0 +1,308 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#1c2340;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    width:95%;
+    margin:20px auto;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo h2{
+    color:#1d4ed8;
+    font-size:34px;
+}
+
+nav{
+    display:flex;
+    gap:45px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.dashboard-btn{
+    padding:12px 28px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.dashboard-btn:hover{
+    background:#1d4ed8;
+}
+
+.profile i{
+    font-size:38px;
+    color:#1d4ed8;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    width:95%;
+    margin:auto;
+    background:linear-gradient(135deg,#edf5ff,#dbeafe);
+    border-radius:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:55px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text i{
+    font-size:55px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.hero-text h1{
+    font-size:58px;
+    font-weight:700;
+    color:#16213e;
+}
+
+.hero-text p{
+    margin-top:15px;
+    font-size:23px;
+    color:#4b5563;
+}
+
+.hero-image{
+    flex:1;
+    text-align:right;
+}
+
+.hero-image img{
+    width:420px;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content{
+    width:95%;
+    margin:45px auto;
+}
+
+.title{
+    font-size:38px;
+    margin-bottom:35px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 30px rgba(37,99,235,.18);
+}
+
+.card i{
+    width:90px;
+    height:90px;
+    line-height:90px;
+    border-radius:50%;
+    background:#e8f1ff;
+    color:#2563eb;
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    font-size:16px;
+    line-height:28px;
+    color:#555;
+}
+
+/* ===========================
+   REMINDER BAR
+=========================== */
+
+.reminder{
+    width:95%;
+    margin:40px auto;
+    background:#dbeafe;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:22px 30px;
+}
+
+.reminder i{
+    color:#2563eb;
+    font-size:35px;
+}
+
+.reminder p{
+    font-size:20px;
+    font-weight:500;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:60px;
+    background:white;
+    text-align:center;
+    padding:25px;
+    color:#666;
+    box-shadow:0 -3px 15px rgba(0,0,0,.05);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-image{
+    margin-top:35px;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.hero{
+    padding:35px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero-image img{
+    width:250px;
+}
+
+.title{
+    font-size:30px;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+.card p{
+    font-size:15px;
+}
+
+.reminder{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
