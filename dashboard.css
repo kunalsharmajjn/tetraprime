@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#1e293b;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:95%;
+    margin:20px auto;
+    background:#fff;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:150px;
+}
+
+.logo h2{
+    color:#2563eb;
+    font-size:34px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#2563eb;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.profile i{
+    font-size:34px;
+    color:#2563eb;
+    cursor:pointer;
+}
+
+.notification{
+    position:relative;
+}
+
+.notification::after{
+    content:'';
+    width:10px;
+    height:10px;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+    top:3px;
+    right:0;
+}
+
+/* ================= WELCOME ================= */
+
+.welcome{
+    width:95%;
+    margin:25px auto;
+    background:linear-gradient(135deg,#edf5ff,#dbeafe);
+    border-radius:25px;
+    padding:55px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.welcome-text h1{
+    font-size:55px;
+    margin-bottom:15px;
+    color:#16213e;
+}
+
+.welcome-text span{
+    color:#2563eb;
+}
+
+.welcome-text p{
+    font-size:20px;
+    color:#555;
+}
+
+.welcome img{
+    width:280px;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    width:95%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:#fff;
+    border-radius:20px;
+    text-align:center;
+    padding:35px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card i{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:18px;
+}
+
+.stat-card h2{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#666;
+}
+
+/* ================= GRID ================= */
+
+.dashboard-grid{
+    width:95%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:30px;
+}
+
+/* PROFILE */
+
+.profile-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.profile-card h2{
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.info p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+.profile-card button{
+    margin-top:25px;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-card button:hover{
+    background:#1d4ed8;
+}
+
+/* ACTIONS */
+
+.actions{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.actions h2{
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.action-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.action-grid a{
+    text-decoration:none;
+}
+
+.action-card{
+    background:#eef5ff;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+}
+
+.action-card:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.action-card:hover i{
+    color:white;
+}
+
+.action-card i{
+    font-size:36px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* ================= UPDATES ================= */
+
+.updates{
+    width:95%;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.updates h2{
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.update{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.update:last-child{
+    border:none;
+}
+
+.update i{
+    color:#2563eb;
+}
+
+/* ================= CHECKLIST ================= */
+
+.checklist{
+    width:95%;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.checklist h2{
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.checklist ul{
+    list-style:none;
+}
+
+.checklist li{
+    padding:12px 0;
+    font-size:18px;
+}
+
+.checklist i{
+    color:#22c55e;
+    margin-right:10px;
+}
+
+/* ================= EVENTS ================= */
+
+.events{
+    width:95%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.event-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+.event-card h3{
+    margin-bottom:15px;
+}
+
+.event-card p{
+    color:#666;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:50px;
+    background:white;
+    text-align:center;
+    padding:25px;
+    color:#666;
+    box-shadow:0 -2px 15px rgba(0,0,0,.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+.stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.dashboard-grid{
+    grid-template-columns:1fr;
+}
+
+.events{
+    grid-template-columns:1fr;
+}
+
+.action-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.welcome{
+    flex-direction:column;
+    text-align:center;
+}
+
+.welcome img{
+    margin-top:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.action-grid{
+    grid-template-columns:1fr;
+}
+
+.welcome{
+    padding:35px;
+}
+
+.welcome h1{
+    font-size:38px;
+}
+
+.welcome p{
+    font-size:17px;
+}
+
+.welcome img{
+    width:220px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+}

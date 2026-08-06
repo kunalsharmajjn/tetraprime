@@ -1,0 +1,24 @@
+{
+  "name": "tetra-prime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunalsharmajjn/tetraprime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kunalsharmajjn/tetraprime/issues"
+  },
+  "homepage": "https://github.com/kunalsharmajjn/tetraprime#readme",
+  "dependencies": {
+    "firebase": "^12.17.1"
+  }
+}
